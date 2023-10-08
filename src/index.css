@@ -32,6 +32,14 @@
   --textColorTertiary: #b3b3b3;
 
   --neutralColor: #ffffff;
+  --blurColor: rgba(26, 26, 26, 0.7);
+
+  /* Z-index */
+  --z-index-xs: 1000;
+  --z-index-sm: 2000;
+  --z-index-md: 3000;
+  --z-index-lg: 4000;
+
   line-height: 1.5;
 }
 
@@ -49,4 +57,26 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+li:active {
+  background-color: var(--brandColorDark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
 }
