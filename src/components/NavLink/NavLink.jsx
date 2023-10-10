@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 
-function NavLink({ className, children }) {
+function NavLink({ children }) {
   return (
-    <li className={className}>
+    <li>
       <a href="#">{children}</a>
     </li>
   );

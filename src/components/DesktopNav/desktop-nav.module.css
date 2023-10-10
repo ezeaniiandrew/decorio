@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px calc(0.3125rem + 1vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  box-shadow: 2px 2px 5px var(--shadowColor);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.icons {
+  display: flex;
+  gap: 1vw;
+}
+
+.logoBox {
+  display: grid;
+  place-items: center;
+  width: calc(3rem + 5vw);
+}

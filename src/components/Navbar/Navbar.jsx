@@ -1,5 +1,5 @@
-import MobileNav from "./MobileNav/MobileNav";
-import c from "./navbar.module.css";
+import DesktopNav from "components/DesktopNav/DesktopNav";
+import MobileNav from "components/MobileNav/MobileNav";
 import { useState, useEffect } from "react";
 
 const mediaQuery = window.matchMedia("(max-width: 600px)");
@@ -16,17 +16,7 @@ function Navbar() {
     };
   }, []);
 
-  return (
-    <>
-      {isMobile ? (
-        <header className={c.header}>
-          <MobileNav />
-        </header>
-      ) : (
-        <p>Hello</p>
-      )}
-    </>
-  );
+  return <>{isMobile ? <MobileNav /> : <DesktopNav />}</>;
 }
 
 export default Navbar;

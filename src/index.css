@@ -10,14 +10,14 @@
   --fw-bold: 700;
 
   /*font sizes */
-  --fs-xs: 12px;
-  --fs-sm: 16px;
-  --fs-md: 18px;
-  --fs-lg: 20px;
-  --fs-xl: 22px;
-  --fs-2xl: 24px;
-  --fs-3xl: 28px;
-  --fs-4xl: 52px;
+  --fs-xs: 0.75rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.75rem;
+  --fs-4xl: 3.25rem;
 
   /* colors */
   --brandColor: #57731c;
@@ -32,7 +32,7 @@
   --textColorTertiary: #b3b3b3;
 
   --neutralColor: #ffffff;
-  --blurColor: rgba(26, 26, 26, 0.7);
+  --shadowColor: rgba(26, 26, 26, 0.7);
 
   /* Z-index */
   --z-index-xs: 1000;
@@ -53,10 +53,19 @@
 
 body {
   margin: 0;
-  display: flex;
+  display: grid;
   place-items: center;
   min-width: 320px;
+  width: 100vw;
   min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 img {
@@ -68,6 +77,10 @@ img {
 li {
   list-style: none;
   text-transform: capitalize;
+  font-size: calc(0.9375rem + 0.390625vw);
+  font-weight: var(--fw-medium);
+  font-family: var(--ff-roboto);
+  color: var(--primaryColor);
 }
 
 li:active {
@@ -76,7 +89,9 @@ li:active {
 
 a {
   text-decoration: none;
-  color: var(--primaryColor);
-  font-size: var(--fs-lg);
-  font-weight: var(--fw-medium);
+  color: inherit;
+}
+
+a:focus {
+  color: var(--brandColor);
 }
