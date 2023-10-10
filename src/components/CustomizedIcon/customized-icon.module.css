@@ -1,0 +1,4 @@
+.icon {
+  width: calc(var(--fs-sm) + 0.7vw);
+  height: calc(var(--fs-sm) + 0.7vw);
+}
