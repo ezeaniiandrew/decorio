@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-
+  background-color: var(--neutralColor);
   box-shadow: 2px 2px 5px var(--shadowColor);
 }
 
