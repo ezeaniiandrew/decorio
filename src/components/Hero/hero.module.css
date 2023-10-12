@@ -1,0 +1,38 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center 62px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+
+  & > div {
+    position: fixed;
+    top: 15%;
+    padding: 0 12px;
+
+    & h2 {
+      font-size: calc(var(--fs-2xl) + 0.390625vw);
+      text-transform: capitalize;
+      font-weight: var(--fw-bold);
+      color: var(--brandColorDark);
+    }
+
+    & p {
+      font-weight: var(--fw-medium);
+      color: var(--brandColor);
+      margin-top: 10px;
+      font-size: calc(var(--fs-xs) + 0.390625vw);
+    }
+
+    & > div {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
