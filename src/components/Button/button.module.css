@@ -1,0 +1,25 @@
+.btn {
+  padding: 16px 32px;
+  border-radius: 52px;
+  width: 100%;
+  background-color: var(--brandColor);
+  border: none;
+  font-weight: var(--fw-semi-bold);
+  color: var(--neutralColor);
+  font-size: var(--fs-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &.text {
+    background-color: transparent;
+  }
+}
+
+.outline {
+  background-color: red;
+  background-color: transparent;
+  border: 1px solid var(--brandColor);
+  color: var(--brandColor);
+}
