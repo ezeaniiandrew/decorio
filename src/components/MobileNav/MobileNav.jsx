@@ -28,7 +28,7 @@ function MobileNav() {
       </div>
 
       <div className={c.navbar}>
-        <nav className={`${isOpen ? c.active : ""}`}>
+        <nav className={isOpen ? c.active : ""}>
           <ul>
             {navLinks.map((link) => (
               <NavLink key={link}>{link}</NavLink>
