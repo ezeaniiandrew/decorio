@@ -1,0 +1,19 @@
+.container {
+  width: 60%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: var(--neutralColor);
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-poppins);
+
+  & > p {
+    font-size: var(--fs-lg);
+  }
+  & > p:first-child {
+    color: var(--brandColor);
+    font-size: var(--fs-md);
+  }
+}
