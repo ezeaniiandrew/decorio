@@ -5,13 +5,9 @@
   background-repeat: no-repeat;
   background-position: center 62px;
   background-size: cover;
-  background-attachment: fixed;
-
-  position: relative;
+  padding-top: 120px;
 
   & > div {
-    position: fixed;
-    top: 15%;
     padding: 0 12px;
 
     & h2 {

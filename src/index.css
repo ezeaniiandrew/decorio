@@ -33,6 +33,7 @@
   --textColorTertiary: #b3b3b3;
 
   --neutralColor: #ffffff;
+  --neutralColor2: #8c8c8c;
   --shadowColor: rgba(26, 26, 26, 0.7);
 
   /* Z-index */
@@ -67,6 +68,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
+  overflow-x: hidden;
 }
 
 img {

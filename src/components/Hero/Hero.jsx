@@ -1,5 +1,5 @@
 import Button from "components/Button/Button";
-import c from "./header.module.css";
+import c from "./hero.module.css";
 import CustomizedIcon from "components/CustomizedIcon/CustomizedIcon";
 import { BsArrowRight } from "react-icons/bs";
 
