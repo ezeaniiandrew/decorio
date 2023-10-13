@@ -6,7 +6,7 @@
 
   & > h3 {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
     text-transform: capitalize;
   }
 

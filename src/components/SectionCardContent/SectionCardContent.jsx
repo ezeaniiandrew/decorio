@@ -1,8 +1,7 @@
+import c from "./section-card-content.module.css";
+
 function SectionCardContent({ children }) {
-  const style = {
-    width: "100%",
-  };
-  return <div style={style}>{children}</div>;
+  return <div className={c.container}>{children}</div>;
 }
 
 export default SectionCardContent;

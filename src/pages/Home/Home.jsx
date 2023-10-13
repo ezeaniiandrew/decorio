@@ -1,8 +1,14 @@
 import Button from "components/Button/Button";
 import Hero from "components/Hero/Hero";
 import Navbar from "components/Navbar/Navbar";
+import ProductImage from "components/ProductImage/ProductImage";
 import SectionCard from "components/SectionCard/SectionCard";
+import SectionCardContent from "components/SectionCardContent/SectionCardContent";
 import SectionHeader from "components/SectionHeader/SectionHeader";
+import InventoryCard from "components/InventordCard/InventoryCard";
+import InventoryDetails from "components/InventoryDetails/InventoryDetails";
+import { collectionImages } from "data/index";
+import c from "./home.module.css";
 
 function Home() {
   return (
@@ -18,7 +24,19 @@ function Home() {
             </Button>
           }
         />
+        <SectionCardContent>
+          {collectionImages.map((item, index) => (
+            <InventoryCard key={index}>
+              <ProductImage image={item.img} />
+              <InventoryDetails
+                quantity={item.qty_left}
+                category={item.category}
+              />
+            </InventoryCard>
+          ))}
+        </SectionCardContent>
       </SectionCard>
+      <div className={c.discounts}></div>
     </>
   );
 }
