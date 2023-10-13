@@ -18,6 +18,7 @@ const filePaths = fileNames.reduce(
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/decorio/",
   plugins: [react()],
   resolve: {
     alias: {
