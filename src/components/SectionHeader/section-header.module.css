@@ -4,13 +4,19 @@
   align-items: center;
   justify-content: space-between;
 
-  & > h3 {
+  & > h2 {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-sm);
+    /* font-size: var(--fs-sm); */
+    font-size: calc(var(--fs-xs) + 0.8vw);
     text-transform: capitalize;
+
+    @media screen and (min-width: 600px) {
+      font-size: calc(var(--fs-3xl) + 0.390625vw);
+    }
   }
 
   & > span {
     width: 30%;
   }
 }
+/* 0.390625 */

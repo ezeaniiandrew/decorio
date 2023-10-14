@@ -12,7 +12,7 @@ function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={c.header}>
+    <header className={c.nav}>
       <div className={c.menu}>
         <div className={c.logoBox}>
           <img src={headerLogo} alt="company logo" />

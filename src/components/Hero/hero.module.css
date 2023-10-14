@@ -1,34 +1,58 @@
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
+  max-width: 1440px;
   background-image: url("../../assets/hero-img.jpg");
   background-repeat: no-repeat;
-  background-position: center 62px;
+  background-position: center;
   background-size: cover;
-  padding-top: 120px;
+  margin-top: 60px;
 
   & > div {
-    padding: 0 12px;
+    padding: clamp(1rem, 0.4286rem + 2.8571vw, 3rem);
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 
-    & h2 {
+    @media screen and (min-width: 600px) {
+      line-height: 1.2;
+    }
+
+    & h1 {
       font-size: calc(var(--fs-2xl) + 0.390625vw);
+
       text-transform: capitalize;
       font-weight: var(--fw-bold);
       color: var(--brandColorDark);
+
+      @media screen and (min-width: 600px) {
+        font-size: calc(var(--fs-3xl) + 2.390625vw);
+      }
     }
 
     & p {
       font-weight: var(--fw-medium);
       color: var(--brandColor);
-      margin-top: 10px;
-      font-size: calc(var(--fs-xs) + 0.390625vw);
+      max-width: 768px;
+      margin: 0 auto;
+      margin-top: 2.5vh;
+      font-weight: var(--fw-medium);
+      font-size: calc(var(--fs-xs) + 0.320625vw);
+
+      @media screen and (min-width: 600px) {
+        font-size: calc(var(--fs-lg) + 0.390625vw);
+      }
     }
 
     & > div {
-      margin-top: 30px;
+      margin-top: 4.5vh;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @media screen and (min-width: 411px) {
+        flex-direction: row;
+      }
     }
   }
 }

@@ -9,11 +9,11 @@ import { MdFavorite } from "react-icons/md";
 
 function DesktopNav() {
   return (
-    <header className={c.header}>
+    <nav className={c.nav}>
       <div className={c.logoBox}>
         <img src={headerLogo} alt="company logo" />
       </div>
-      <nav>
+      <div>
         <ul className={c.navLinks}>
           {navLinks.map((link, index) => (
             <NavLink key={link} index={index}>
@@ -21,7 +21,7 @@ function DesktopNav() {
             </NavLink>
           ))}
         </ul>
-      </nav>
+      </div>
       <div className={c.icons}>
         <CustomizedIcon>
           <AiOutlineSearch />
@@ -33,7 +33,7 @@ function DesktopNav() {
           <MdFavorite />
         </CustomizedIcon>
       </div>
-    </header>
+    </nav>
   );
 }
 

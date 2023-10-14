@@ -1,6 +1,6 @@
 import img1 from "assets/chair-five.png";
 import img2 from "assets/chair-six.png";
-import img3 from "assets/brown-wooden-chair.jpg";
+import img3 from "assets/brown-wooden-chair.png";
 
 export const navLinks = [
   "home",

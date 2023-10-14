@@ -32,6 +32,8 @@
   --textColorSecondary: #666666;
   --textColorTertiary: #b3b3b3;
 
+  --card-bg-clr: #f9f9f9;
+
   --neutralColor: #ffffff;
   --neutralColor2: #8c8c8c;
   --shadowColor: rgba(26, 26, 26, 0.7);
@@ -55,20 +57,17 @@
 
 body {
   margin: 0;
-  display: grid;
-  place-items: center;
-  min-width: 320px;
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
-  min-height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width: 1445px;
   text-align: center;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 img {
@@ -101,4 +100,8 @@ a:focus {
 
 span {
   font-size: inherit;
+}
+
+button {
+  cursor: pointer;
 }

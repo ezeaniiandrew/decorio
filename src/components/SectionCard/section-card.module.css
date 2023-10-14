@@ -1,6 +1,9 @@
 .sectionCard {
   width: 100%;
-  height: auto;
   padding: 0 15px;
-  margin: 40px 0;
+  margin-top: 3vh;
+
+  @media screen and (min-width: 600px) {
+    padding: 0 3vw;
+  }
 }

@@ -3,8 +3,8 @@ import c from "./section-header.module.css";
 function SectionHeader({ title, actionElement }) {
   return (
     <div className={c.sectionHeader}>
-      <h3>{title}</h3>
-      <span>{actionElement}</span>
+      <h2>{title}</h2>
+      <div>{actionElement}</div>
     </div>
   );
 }

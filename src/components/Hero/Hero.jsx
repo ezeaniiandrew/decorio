@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section className={c.hero}>
       <div className={c.content}>
-        <h2>good furniture that brightens your home</h2>
+        <h1>good furniture that brightens your home</h1>
         <p>
           The right furniture pieces, thoughtfully chose, infuse every room with
           warmth, character, and style, creating a haven that reflects your

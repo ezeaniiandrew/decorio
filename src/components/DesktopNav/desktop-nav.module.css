@@ -1,15 +1,21 @@
-.header {
+.nav {
   width: 100%;
+  max-width: 1440px;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px calc(0.3125rem + 1vw);
+  right: 0;
+  padding: 3vh calc(0.3125rem + 1vw);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   background-color: var(--neutralColor);
-  box-shadow: 2px 2px 5px var(--shadowColor);
+  box-shadow: 0 2px 5px var(--shadowColor);
+
+  @media screen and (min-width: 600px) {
+    padding: 3vh 3vw;
+  }
 }
 
 .navLinks {
